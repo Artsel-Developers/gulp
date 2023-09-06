@@ -26,7 +26,7 @@ gulp.task('styles', function () {
 		}))
 		.pipe(gulp.dest('app/css'))
 		.pipe(cleancss({ level: { 1: { specialComments: 0 } } }))
-		.pipe(rename('main.min.css'))
+		// .pipe(rename('main.min.css'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.stream())
